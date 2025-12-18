@@ -12,7 +12,8 @@ import sys
 # Variables
 #
 #########################################################################################
-quatri_name = "full-master" # 1a-psico, full-master
+# quatri_name = "1a-psico"
+quatri_name = "full-master"
 max_number_pacs = 5 # 4, 5
 
 #########################################################################################
