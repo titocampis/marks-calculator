@@ -12,9 +12,16 @@ import sys
 # Variables
 #
 #########################################################################################
-# quatri_name = "1a-psico"
-quatri_name = "full-master"
-max_number_pacs = 5 # 4, 5
+arguments = sys.argv
+if len(arguments) == 1:
+    print("ERROR: You should introduce the json name as first argument")
+    exit(1)
+elif len(arguments) > 2:
+    print("ERROR: Too much arguments, this scrips just accept 1 argument: json_name")
+    exit(1)
+
+quatri_name = sys.argv[1] # master, psico-1a
+max_number_pacs = 6 # 4, 5, 6 ...
 
 #########################################################################################
 #
