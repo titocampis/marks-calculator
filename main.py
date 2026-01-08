@@ -20,7 +20,7 @@ elif len(arguments) > 2:
     print("ERROR: Too much arguments, this scrips just accept 1 argument: json_name")
     exit(1)
 
-quatri_name = sys.argv[1] # master, psico-1a
+quatri_name = sys.argv[1] # master, psico-XXXXy
 max_number_pacs = 6 # 4, 5, 6 ...
 
 #########################################################################################
