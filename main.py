@@ -1,5 +1,4 @@
 import json
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from tabulate import tabulate
@@ -21,7 +20,6 @@ elif len(arguments) > 2:
     exit(1)
 
 quatri_name = sys.argv[1] # master, psico-XXXXy
-max_number_pacs = 6 # 4, 5, 6 ...
 
 #########################################################################################
 #
@@ -35,7 +33,7 @@ max_number_pacs = 6 # 4, 5, 6 ...
 #
 #########################################################################################
 # Import df from json
-with open(f"{quatri_name}.json", "r") as file:
+with open(f"{quatri_name}", "r") as file:
     data = json.load(file)
 
 # Check if waged subjects
@@ -47,7 +45,7 @@ else:
 # Calculate decimal marks, final mark and create df
 rows = []
 wages = []
-
+max_number_pacs = 0
 # Iterate the full dictionary
 for subject, dictionary in data.items():
     decimal_marks = []
@@ -55,6 +53,9 @@ for subject, dictionary in data.items():
     final_mark_sum = 0
     final_wages_sum = 0
 
+    if max_number_pacs < len(dictionary["wages"]):
+        max_number_pacs = len(dictionary["wages"])
+    
     # Iterate the dictionary inside each subject
     for i in range(len(dictionary["wages"])):
         if i < len(dictionary["marks"]):
@@ -98,7 +99,7 @@ final_mark = round(sum_marks / count_marks, 2)
 
 # Reorder columns: put Mark3 after Mark2
 cols = ["Subject"] 
-cols.extend([f"Mark{i}" for i in range(1, max_number_pacs + 1)])
+cols.extend([f"Mark{i}" for i in range(1, max_number_pacs)])
 cols.append("Final Mark")
 df = df.reindex(columns=cols)
 
