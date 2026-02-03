@@ -99,11 +99,11 @@ final_mark = round(sum_marks / count_marks, 2)
 
 # Reorder columns: put Mark3 after Mark2
 cols = ["Subject"] 
-cols.extend([f"Mark{i}" for i in range(1, max_number_pacs)])
+cols.extend([f"Mark{i}" for i in range(1, max_number_pacs + 1)])
 cols.append("Final Mark")
 df = df.reindex(columns=cols)
 
-print(f"Quatri: {quatri_name}")
+print(f"Quatri: {quatri_name.split(".json")[0]}")
 print(tabulate(df, headers='keys', tablefmt='psql'))
 print("+--------------------+")
 print(f"| Average Mark: {final_mark} |")
