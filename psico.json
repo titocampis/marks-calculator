@@ -1,0 +1,26 @@
+{
+  "Desenvolupament Infància": {
+    "marks": [5.88, 12, 14.9, 22.5, 37.5],
+    "wages": [6.6, 13.2, 16.2, 23.4, 40]
+  },
+  "Percepció i Emoció": {
+    "marks": [19.6, 23.13, 22.67, 20.25],
+    "wages": [25, 25, 25, 25]
+  },
+  "Processos Psicosocials": {
+    "marks": [22.5, 18.75, 20, 23.75, 50],
+    "wages": [25, 25, 25, 25, 50]
+  },
+  "Recerca": {
+    "marks": [18.04, 19.8, 13.2, 30.6],
+    "wages": [22, 22, 22, 34]
+  },
+  "Memòria i Atenció": {
+    "marks": [29, 24.5, 31],
+    "wages": [30, 30, 40]
+  },
+  "Desenvolupament II": {
+    "marks": [25, 23.4],
+    "wages": [25, 25, 25, 25]
+  }
+}

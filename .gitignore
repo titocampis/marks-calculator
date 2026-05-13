@@ -40,5 +40,5 @@ test.py
 *Zone.Identifier
 
 # My marks
-*.json
+# *.json
 

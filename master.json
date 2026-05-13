@@ -1,0 +1,42 @@
+{
+  "Desenvolupament": {
+    "marks": [25, 33, 29],
+    "wages": [25, 35, 40],
+    "credits": 5
+  },
+  "Ensenyar TEC": {
+    "marks": [9.5, 22, 10, 23.5, 12.75, 13.75],
+    "wages": [10, 25, 10, 25, 15, 15],
+    "credits": 5
+  },
+  "Projecte TEC": {
+    "marks": [5, 7.5, 8.05, 10, 31, 10, 9],
+    "wages": [5, 15, 10, 10, 40, 10, 10],
+    "credits": 10
+  },
+  "Projecte SFE": {
+    "marks": [22.5, 25.5],
+    "wages": [30, 30, 40],
+    "credits": 10
+  },
+  "Practicum": {
+    "marks": [5.5, 7.5, 12.25, 25, 14, 10],
+    "wages": [10, 10, 15, 35, 20, 10],
+    "credits": 14
+  },
+  "Didactica": {
+    "marks": [20, 5, 15, 10],
+    "wages": [20, 5, 15, 10, 20, 5, 20, 5],
+    "credits": 5
+  },
+  "TFM": {
+    "marks": [],
+    "wages": [20, 60, 20],
+    "credits": 6
+  },
+  "Seminari": {
+    "marks": [24.5, 24.3, 27.1],
+    "wages": [33, 34, 33],
+    "credits": 5
+  }
+}
