@@ -49,7 +49,11 @@ max_number_pacs = 0
 # Iterate the full dictionary
 for subject, dictionary in data.items():
     decimal_marks = []
-    row = {"Subject": subject}
+    
+    # Mark completed subjects
+    tick = " [v]" if len(dictionary["wages"]) == len(dictionary["marks"]) else ""
+    row = {"Subject": f"{subject}{tick}"}
+    
     final_mark_sum = 0
     final_wages_sum = 0
 
